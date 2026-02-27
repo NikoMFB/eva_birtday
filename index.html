@@ -716,6 +716,8 @@
                 }
                 
                 this.scene = new THREE.Scene();
+                const axesHelper = new THREE.AxesHelper(5);
+this.scene.add(axesHelper);
                 this.scene.background = null;
                 const originSphere = new THREE.Mesh(
     new THREE.SphereGeometry(0.1, 8),
