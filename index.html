@@ -717,6 +717,11 @@
                 
                 this.scene = new THREE.Scene();
                 this.scene.background = null;
+                const originSphere = new THREE.Mesh(
+    new THREE.SphereGeometry(0.1, 8),
+    new THREE.MeshBasicMaterial({ color: 0xff0000 })
+);
+this.scene.add(originSphere);
                 
                 this.camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
                 this.camera.position.set(0, 0, 12);
