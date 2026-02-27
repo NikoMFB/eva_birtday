@@ -766,6 +766,7 @@ this.scene.add(originSphere);
                         const box = new THREE.Box3().setFromObject(this.model);
                         const center = box.getCenter(new THREE.Vector3());
                         this.model.position.sub(center);
+                        this.model.position.y -= 0.5;
                         
                         const size = box.getSize(new THREE.Vector3());
                         const maxDim = Math.max(size.x, size.y, size.z);
