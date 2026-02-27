@@ -716,14 +716,9 @@
                 }
                 
                 this.scene = new THREE.Scene();
-                const axesHelper = new THREE.AxesHelper(5);
-this.scene.add(axesHelper);
+                
                 this.scene.background = null;
-                const originSphere = new THREE.Mesh(
-    new THREE.SphereGeometry(0.1, 8),
-    new THREE.MeshBasicMaterial({ color: 0xff0000 })
-);
-this.scene.add(originSphere);
+                
                 
                 this.camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
                 this.camera.position.set(0, 0, 12);
@@ -777,9 +772,7 @@ this.scene.add(originSphere);
                         this.model.scale.set(scale, scale, scale);
                         this.originalScale = scale;
 
-                        this.model.position.x += -5;
-
-                        this.model.position.z += -15.0;
+                        
                         // Подняли на 0.9
                         this.model.position.y += 0.9;
                         
