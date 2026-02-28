@@ -298,9 +298,7 @@
             <div class="subtitles-container">
                 <div class="subtitles" id="subtitles"></div>
             </div>
-            <div class="bottom-area">
-                <button class="action-button" id="actionButton">hello</button>
-            </div>
+          
         </div>
     </div>
 
@@ -768,7 +766,7 @@
                         const size = box.getSize(new THREE.Vector3());
                         const maxDim = Math.max(size.x, size.y, size.z);
                         
-                        const scale = 4 / maxDim;
+                        const scale = 3 / maxDim;
                         this.model.scale.set(scale, scale, scale);
                         this.originalScale = scale;
 
